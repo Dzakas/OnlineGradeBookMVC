@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineGradeBookMVC", "OnlineGradeBookMVC\OnlineGradeBookMVC.csproj", "{BC478539-CFA1-432A-827B-2A08A7A102E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{B2B2CE88-5F1D-4136-B90C-AA1DC17E756B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C08A27F0-1977-4885-B74E-26766981549C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D6558162-9831-4C34-BC40-E4A8295F8E4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{9F8B1786-E8FB-44CA-A84A-FBAFA282BE69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OGB.Domain", "OGB.Domain\OGB.Domain.csproj", "{D336C689-A0CE-4E9F-8BBF-33B25953344F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OGB.Application", "OGB.Application\OGB.Application.csproj", "{49C108BC-2B41-4F5C-B0C4-CFDC15C197EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OGB.Infrastructure", "OGB.Infrastructure\OGB.Infrastructure.csproj", "{857C63B2-C9B8-4BFB-B715-B638D1AD62D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC478539-CFA1-432A-827B-2A08A7A102E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC478539-CFA1-432A-827B-2A08A7A102E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC478539-CFA1-432A-827B-2A08A7A102E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC478539-CFA1-432A-827B-2A08A7A102E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D336C689-A0CE-4E9F-8BBF-33B25953344F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D336C689-A0CE-4E9F-8BBF-33B25953344F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D336C689-A0CE-4E9F-8BBF-33B25953344F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D336C689-A0CE-4E9F-8BBF-33B25953344F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C108BC-2B41-4F5C-B0C4-CFDC15C197EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C108BC-2B41-4F5C-B0C4-CFDC15C197EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C108BC-2B41-4F5C-B0C4-CFDC15C197EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C108BC-2B41-4F5C-B0C4-CFDC15C197EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{857C63B2-C9B8-4BFB-B715-B638D1AD62D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857C63B2-C9B8-4BFB-B715-B638D1AD62D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857C63B2-C9B8-4BFB-B715-B638D1AD62D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857C63B2-C9B8-4BFB-B715-B638D1AD62D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC478539-CFA1-432A-827B-2A08A7A102E8} = {9F8B1786-E8FB-44CA-A84A-FBAFA282BE69}
+		{D336C689-A0CE-4E9F-8BBF-33B25953344F} = {C08A27F0-1977-4885-B74E-26766981549C}
+		{49C108BC-2B41-4F5C-B0C4-CFDC15C197EE} = {B2B2CE88-5F1D-4136-B90C-AA1DC17E756B}
+		{857C63B2-C9B8-4BFB-B715-B638D1AD62D3} = {D6558162-9831-4C34-BC40-E4A8295F8E4F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7402E2C-4B17-4ED4-AA41-69102006C623}
+	EndGlobalSection
+EndGlobal
