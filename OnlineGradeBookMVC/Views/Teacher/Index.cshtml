@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Teachers</h1>
+
+<table class="table">
+    <style>
+        table {
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid;
+            padding: 10px;
+        }
+    </style>
+    <thead>
+        <tr>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Teacher" asp-action="TeachersList">List of teachers</a>
+            </th>            
+        </tr>
+        <tr>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Teacher" asp-action="TeachersContactInformation">Teachers' contact informations</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Teacher" asp-action="TeachersAddresses">Teachers' addresses</a>
+            </th>
+        </tr>
+    </thead>
+</table>

@@ -14,6 +14,7 @@ namespace OGB.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
             services.AddTransient<IClass1ARepository, Class1ARepository>();
+            services.AddTransient<ITeacherRepository, TeacherRepository>();
             return services;
         }
     }
