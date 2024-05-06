@@ -148,92 +148,92 @@ namespace OGB.Application.Services
         }
 
 
-        public NewBiologyVm GetBiologyGradeForEdit(int id)
+        public EditBiology1AVm GetBiologyGradeForEdit(int id)
         {
             var biologyGrade = _class1ARepository.GetBiologyGrade(id);
-            var biologyGradeVm = _mapper.Map<NewBiologyVm>(biologyGrade);
+            var biologyGradeVm = _mapper.Map<EditBiology1AVm>(biologyGrade);
             return biologyGradeVm;
         }
 
-        public void UpdateBiologyGrade(NewBiologyVm model)
+        public void UpdateBiologyGrade(EditBiology1AVm model)
         {
             var biologyGrade = _mapper.Map<_1ABiology>(model);
             _class1ARepository.UpdateBiologyGrade(biologyGrade);
         }
 
-        public NewChemistryVm GetChemistryGradeForEdit(int id)
+        public EditChemistry1AVm GetChemistryGradeForEdit(int id)
         {
             var chemistryGrade = _class1ARepository.GetChemistryGrade(id);
-            var chemistryGradeVm = _mapper.Map<NewChemistryVm>(chemistryGrade);
+            var chemistryGradeVm = _mapper.Map<EditChemistry1AVm>(chemistryGrade);
             return chemistryGradeVm;
         }
 
-        public void UpdateChemistryGrade(NewChemistryVm model)
+        public void UpdateChemistryGrade(EditChemistry1AVm model)
         {
             var chemistryGrade = _mapper.Map<_1AChemistry>(model);
             _class1ARepository.UpdateChemistryGrade(chemistryGrade);
         }
 
-        public NewEnglishVm GetEnglishGradeForEdit(int id)
+        public EditEnglish1AVm GetEnglishGradeForEdit(int id)
         {
             var englishGrade = _class1ARepository.GetEnglishGrade(id);
-            var englishGradeVm = _mapper.Map<NewEnglishVm>(englishGrade);
+            var englishGradeVm = _mapper.Map<EditEnglish1AVm>(englishGrade);
             return englishGradeVm;
         }
 
-        public void UpdateEnglishGrade(NewEnglishVm model)
+        public void UpdateEnglishGrade(EditEnglish1AVm model)
         {
             var englishGrade = _mapper.Map<_1AEnglish>(model);
             _class1ARepository.UpdateEnglishGrade(englishGrade);
         }
 
-        public NewGeographyVm GetGeographyGradeForEdit(int id)
+        public EditGeography1AVm GetGeographyGradeForEdit(int id)
         {
             var geographyGrade = _class1ARepository.GetGeographyGrade(id);
-            var geographyGradeVm = _mapper.Map<NewGeographyVm>(geographyGrade);
+            var geographyGradeVm = _mapper.Map<EditGeography1AVm>(geographyGrade);
             return geographyGradeVm;
         }
 
-        public void UpdateGeographyGrade(NewGeographyVm model)
+        public void UpdateGeographyGrade(EditGeography1AVm model)
         {
             var geographyGrade = _mapper.Map<_1AGeography>(model);
             _class1ARepository.UpdateGeographyGrade(geographyGrade);
         }
 
-        public NewGermanVm GetGermanGradeForEdit(int id)
+        public EditGerman1AVm GetGermanGradeForEdit(int id)
         {
             var germanGrade = _class1ARepository.GetGermanGrade(id);
-            var germanGradeVm = _mapper.Map<NewGermanVm>(germanGrade);
+            var germanGradeVm = _mapper.Map<EditGerman1AVm>(germanGrade);
             return germanGradeVm;
         }
 
-        public void UpdateGermanGrade(NewGermanVm model)
+        public void UpdateGermanGrade(EditGerman1AVm model)
         {
             var germanGrade = _mapper.Map<_1AGerman>(model);
             _class1ARepository.UpdateGermanGrade(germanGrade);
         }
 
-        public NewHistoryVm GetHistoryGradeForEdit(int id)
+        public EditHistory1AVm GetHistoryGradeForEdit(int id)
         {
             var historyGrade = _class1ARepository.GetHistoryGrade(id);
-            var historyGradeVm = _mapper.Map<NewHistoryVm>(historyGrade);
+            var historyGradeVm = _mapper.Map<EditHistory1AVm>(historyGrade);
             return historyGradeVm;
         }
 
-        public void UpdateHistoryGrade(NewHistoryVm model)
+        public void UpdateHistoryGrade(EditHistory1AVm model)
         {
             var historyGrade = _mapper.Map<_1AHistory>(model);
             _class1ARepository.UpdateHistoryGrade(historyGrade);
         }
 
-        public NewMathVm GetMathGradeForEdit(int id)
+        public EditMath1AVm GetMathGradeForEdit(int id)
         {
             var mathGrade = _class1ARepository.GetMathGrade(id);
-            var mathGradeVm = _mapper.Map<NewMathVm>(mathGrade);
+            var mathGradeVm = _mapper.Map<EditMath1AVm>(mathGrade);
             return mathGradeVm;
         }
 
-        public void UpdateMathGrade(NewMathVm model)
+        public void UpdateMathGrade(EditMath1AVm model)
         {
             var mathGrade = _mapper.Map<_1AMath>(model);
             _class1ARepository.UpdateMathGrade(mathGrade);

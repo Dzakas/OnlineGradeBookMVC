@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OGB.Application.ViewModels.Class1A.VmForEdit
+namespace OGB.Application.ViewModels.Class1B.VmForEdit
 {
-    public class NewGeographyVm : IMapFrom<_1AGeography>
+    public class EditEnglish1BVm : IMapFrom<_1BEnglish>
     {
         public int Id { get; set; }
         public double TestAvarage { get; set; }
@@ -17,7 +17,7 @@ namespace OGB.Application.ViewModels.Class1A.VmForEdit
         public double HomeworkAvarage { get; set; }
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<NewGeographyVm, _1AGeography>()
+            profile.CreateMap<EditEnglish1BVm, _1BEnglish>()
                 .ForMember(d => d.Id, opt => opt.MapFrom(s => s.Id))
                 .ForMember(d => d.TestAvarage, opt => opt.MapFrom(s => s.TestAvarage))
                 .ForMember(d => d.ShortQuizAvarage, opt => opt.MapFrom(s => s.ShortQuizAvarage))

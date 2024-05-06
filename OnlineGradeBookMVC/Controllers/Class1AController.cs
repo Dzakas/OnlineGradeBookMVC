@@ -18,6 +18,7 @@ namespace OnlineGradeBookMVC.Controllers
             var model = _class1AService.GetAllStudentsForList();
             return View(model);
         }
+
         [HttpGet]
         public IActionResult StudentsContactInformation()
         {
@@ -80,7 +81,7 @@ namespace OnlineGradeBookMVC.Controllers
             return View(biologyGrade);
         }
         [HttpPost]
-        public IActionResult EditBiologyGrade(NewBiologyVm model)
+        public IActionResult EditBiologyGrade(EditBiology1AVm model)
         {
             if (ModelState.IsValid)
             {
@@ -97,7 +98,7 @@ namespace OnlineGradeBookMVC.Controllers
             return View(chemistryGrade);
         }
         [HttpPost]
-        public IActionResult EditChemistryGrade(NewChemistryVm model)
+        public IActionResult EditChemistryGrade(EditChemistry1AVm model)
         {
             if (ModelState.IsValid)
             {
@@ -114,7 +115,7 @@ namespace OnlineGradeBookMVC.Controllers
             return View(englishGrade);
         }
         [HttpPost]
-        public IActionResult EditEnglishGrade(NewEnglishVm model)
+        public IActionResult EditEnglishGrade(EditEnglish1AVm model)
         {
             if (ModelState.IsValid)
             {
@@ -131,7 +132,7 @@ namespace OnlineGradeBookMVC.Controllers
             return View(geographyGrade);
         }
         [HttpPost]
-        public IActionResult EditGeographyGrade(NewGeographyVm model)
+        public IActionResult EditGeographyGrade(EditGeography1AVm model)
         {
             if (ModelState.IsValid)
             {
@@ -148,7 +149,7 @@ namespace OnlineGradeBookMVC.Controllers
             return View(germanGrade);
         }
         [HttpPost]
-        public IActionResult EditGermanGrade(NewGermanVm model)
+        public IActionResult EditGermanGrade(EditGerman1AVm model)
         {
             if (ModelState.IsValid)
             {
@@ -165,7 +166,7 @@ namespace OnlineGradeBookMVC.Controllers
             return View(historyGrade);
         }
         [HttpPost]
-        public IActionResult EditHistoryGrade(NewHistoryVm model)
+        public IActionResult EditHistoryGrade(EditHistory1AVm model)
         {
             if (ModelState.IsValid)
             {
@@ -182,7 +183,7 @@ namespace OnlineGradeBookMVC.Controllers
             return View(mathGrade);
         }
         [HttpPost]
-        public IActionResult EditMathGrade(NewMathVm model)
+        public IActionResult EditMathGrade(EditMath1AVm model)
         {
             if (ModelState.IsValid)
             {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OGB.Application.ViewModels.Class1A.VmForEdit
 {
-    public class NewEnglishVm : IMapFrom<_1AEnglish>
+    public class EditGeography1AVm : IMapFrom<_1AGeography>
     {
         public int Id { get; set; }
         public double TestAvarage { get; set; }
@@ -17,7 +17,7 @@ namespace OGB.Application.ViewModels.Class1A.VmForEdit
         public double HomeworkAvarage { get; set; }
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<NewEnglishVm, _1AEnglish>()
+            profile.CreateMap<EditGeography1AVm, _1AGeography>()
                 .ForMember(d => d.Id, opt => opt.MapFrom(s => s.Id))
                 .ForMember(d => d.TestAvarage, opt => opt.MapFrom(s => s.TestAvarage))
                 .ForMember(d => d.ShortQuizAvarage, opt => opt.MapFrom(s => s.ShortQuizAvarage))

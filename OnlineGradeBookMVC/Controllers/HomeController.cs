@@ -12,12 +12,31 @@ namespace OnlineGradeBookMVC.Controllers
         {
             _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
-
+        [HttpGet]
+        public IActionResult ClassSplit()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Class1Split()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Class2Split()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Class3Split()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

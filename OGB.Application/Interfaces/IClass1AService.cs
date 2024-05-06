@@ -20,19 +20,19 @@ namespace OGB.Application.Interfaces
         ListGerman1AForListVm GetAllGermanForList();
         ListHistory1AForListVm GetAllHistoryForList();
         ListMath1AForListVm GetAllMathForList();
-        NewBiologyVm GetBiologyGradeForEdit(int id);
-        void UpdateBiologyGrade(NewBiologyVm model);
-        NewChemistryVm GetChemistryGradeForEdit(int id);
-        void UpdateChemistryGrade(NewChemistryVm model);
-        NewEnglishVm GetEnglishGradeForEdit(int id);
-        void UpdateEnglishGrade(NewEnglishVm model);
-        NewGeographyVm GetGeographyGradeForEdit(int id);
-        void UpdateGeographyGrade(NewGeographyVm model);
-        NewGermanVm GetGermanGradeForEdit(int id);
-        void UpdateGermanGrade(NewGermanVm model);
-        NewHistoryVm GetHistoryGradeForEdit(int id);
-        void UpdateHistoryGrade(NewHistoryVm model);
-        NewMathVm GetMathGradeForEdit(int id);
-        void UpdateMathGrade(NewMathVm model);
+        EditBiology1AVm GetBiologyGradeForEdit(int id);
+        void UpdateBiologyGrade(EditBiology1AVm model);
+        EditChemistry1AVm GetChemistryGradeForEdit(int id);
+        void UpdateChemistryGrade(EditChemistry1AVm model);
+        EditEnglish1AVm GetEnglishGradeForEdit(int id);
+        void UpdateEnglishGrade(EditEnglish1AVm model);
+        EditGeography1AVm GetGeographyGradeForEdit(int id);
+        void UpdateGeographyGrade(EditGeography1AVm model);
+        EditGerman1AVm GetGermanGradeForEdit(int id);
+        void UpdateGermanGrade(EditGerman1AVm model);
+        EditHistory1AVm GetHistoryGradeForEdit(int id);
+        void UpdateHistoryGrade(EditHistory1AVm model);
+        EditMath1AVm GetMathGradeForEdit(int id);
+        void UpdateMathGrade(EditMath1AVm model);
     }
 }
