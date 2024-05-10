@@ -1,4 +1,4 @@
-﻿@model OGB.Application.ViewModels.Class1A.ListGeography1AForListVm
+﻿@model OGB.Application.ViewModels.Class1B.VmForDisplay.ListGeography1BForListVm
 @{
     ViewData["Title"] = "GeographyAvarages";
 }
@@ -6,13 +6,13 @@
 <h1>Geography Avarages</h1>
 
 <<p>
-    <a class="nav-link text-dark" asp-area="" asp-controller="Class1A" asp-action="StudentsAvarages">Back to previous page</a>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Class1B" asp-action="StudentsAvarages">Back to previous page</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                <a class="nav-link text-dark" asp-area="" asp-controller="Class1A" asp-action="EditGeographyGrade">Edit grade</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1B" asp-action="EditGeographyGrade">Edit grade</a>
             </th>
         </tr>
     </thead>
@@ -51,7 +51,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Geography1A)
+        @foreach (var item in Model.Geography1B)
         {
             <tr>
                 <td>

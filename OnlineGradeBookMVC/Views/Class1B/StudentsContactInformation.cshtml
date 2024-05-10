@@ -1,23 +1,14 @@
-﻿@model OGB.Application.ViewModels.Class1A.ListMath1AForListVm
+﻿@model OGB.Application.ViewModels.Class1B.VmForDisplay.ListStudentsContactInfo1BForListVm
 
 @{
-    ViewData["Title"] = "MathAvarages";
+    ViewData["Title"] = "StudentsContactInformation";
 }
 
-<h1>Math Avarages</h1>
+<h1>StudentsContactInformation</h1>
 
 <p>
-    <a class="nav-link text-dark" asp-area="" asp-controller="Class1A" asp-action="StudentsAvarages">Back to previous page</a>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Class1B" asp-action="Index">Back to previous page</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                <a class="nav-link text-dark" asp-area="" asp-controller="Class1A" asp-action="EditMathGrade">Edit grade</a>
-            </th>
-        </tr>
-    </thead>
-</table>
 <table class="table">
     <style>
         table {
@@ -33,6 +24,7 @@
             border: 1px solid;
             padding: 10px;
         }
+
     </style>
     <thead>
         <tr>
@@ -40,32 +32,38 @@
                 Index number
             </th>
             <th>
-                TestAvarage
+                FirstName
             </th>
             <th>
-                ShortQuizAvarage
+                LastName
             </th>
             <th>
-                HomeWorkAvarage
+                PhoneNumber
+            </th>
+            <th>
+                Email
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Math1A)
+        @foreach (var item in Model.StudentsContactInfo1B)
         {
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.Id)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.TestAvarage)
+                    @Html.DisplayFor(modelItem => item.FirstName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ShortQuizAvarage)
+                    @Html.DisplayFor(modelItem => item.LastName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.HomeworkAvarage)
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
                 </td>
             </tr>
         }

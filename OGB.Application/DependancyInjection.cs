@@ -15,6 +15,7 @@ namespace OGB.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddTransient<IClass1AService, Class1AService>();
+            services.AddTransient<IClass1BService, Class1BService>();
             services.AddTransient<ITeacherService, TeacherService>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             return services;

@@ -1,4 +1,4 @@
-﻿@model OGB.Application.ViewModels.Class1A.VmForEdit.EditGerman1AVm
+﻿@model OGB.Application.ViewModels.Class1B.VmForEdit.EditGerman1BVm
 
 @{
     ViewData["Title"] = "EditGermanGrade";
@@ -6,10 +6,10 @@
 
 <h1>Edit German Grade</h1>
 
-<h4>EditGerman1AVm</h4>
+<h4>EditGerman1BVm</h4>
 <hr />
 <p>
-    <a class="nav-link text-dark" asp-area="" asp-controller="Class1A" asp-action="GermanAvarages">Back to previous page</a>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Class1B" asp-action="EnglishAvarages">Back to previous page</a>
 </p>
 <div class="row">
     <div class="col-md-4">
@@ -41,7 +41,6 @@
         </form>
     </div>
 </div>
-
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

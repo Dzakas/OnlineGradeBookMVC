@@ -1,14 +1,26 @@
-﻿@model OGB.Application.ViewModels.Class1A.ListStudentsContactInfo1AForListVm
+﻿@model OGB.Application.ViewModels.Class1B.VmForDisplay.ListStudentForList1BVm
 
 @{
-    ViewData["Title"] = "StudentsContactInformation";
+    ViewData["Title"] = "Index";
 }
 
-<h1>Students Contact Information</h1>
-
+<h1>Class 1B</h1>
 <p>
-    <a class="nav-link text-dark" asp-area="" asp-controller="Class1A" asp-action="Index">Back to previous page</a>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Class1Split">Back to previous page</a>
 </p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1B" asp-action="StudentsAvarages">Grade averages</a>
+            </th>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1B" asp-action="StudentsContactInformation">Contact information of students</a>
+            </th>
+        </tr>
+    </thead>
+</table>
+
 <table class="table">
     <style>
         table {
@@ -24,7 +36,6 @@
             border: 1px solid;
             padding: 10px;
         }
-
     </style>
     <thead>
         <tr>
@@ -38,16 +49,13 @@
                 LastName
             </th>
             <th>
-                PhoneNumber
-            </th>
-            <th>
-                Email
+                Avarage
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.StudentsContactInfo1A) {
+@foreach (var item in Model.Students1B) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Id)
@@ -59,12 +67,10 @@
                 @Html.DisplayFor(modelItem => item.LastName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
+                @Html.DisplayFor(modelItem => item.Avarage)
             </td>
         </tr>
 }
     </tbody>
 </table>
+
