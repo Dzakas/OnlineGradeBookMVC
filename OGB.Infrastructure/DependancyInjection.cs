@@ -15,6 +15,7 @@ namespace OGB.Infrastructure
         {
             services.AddTransient<IClass1ARepository, Class1ARepository>();
             services.AddTransient<IClass1BRepository, Class1BRepository>();
+            services.AddTransient<IClass1CRepository, Class1CRepository>();
             services.AddTransient<ITeacherRepository, TeacherRepository>();
             return services;
         }

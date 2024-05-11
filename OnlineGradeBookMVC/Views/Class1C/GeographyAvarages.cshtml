@@ -1,0 +1,73 @@
+﻿@model OGB.Application.ViewModels.Class1C.VmForDisplay.ListGeography1CForListVm
+
+@{
+    ViewData["Title"] = "GeographyAvarages";
+}
+
+<h1>Geography Avarages</h1>
+
+<<p>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="StudentsAvarages">Back to previous page</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="EditGeographyGrade">Edit grade</a>
+            </th>
+        </tr>
+    </thead>
+</table>
+<table class="table">
+    <style>
+        table {
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid;
+            padding: 10px;
+        }
+    </style>
+    <thead>
+        <tr>
+            <th>
+                Index number
+            </th>
+            <th>
+                TestAvarage
+            </th>
+            <th>
+                ShortQuizAvarage
+            </th>
+            <th>
+                HomeWorkAvarage
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Geography1C)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TestAvarage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShortQuizAvarage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HomeworkAvarage)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

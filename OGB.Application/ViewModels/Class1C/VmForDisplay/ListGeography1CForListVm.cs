@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OGB.Application.ViewModels.Class1C.VmForDisplay
+{
+    public class ListGeography1CForListVm
+    {
+        public List<Geography1CForListVm> Geography1C { get; set; }
+        public int Count { get; set; }
+    }
+}

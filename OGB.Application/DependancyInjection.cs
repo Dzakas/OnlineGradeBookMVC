@@ -16,6 +16,7 @@ namespace OGB.Application
         {
             services.AddTransient<IClass1AService, Class1AService>();
             services.AddTransient<IClass1BService, Class1BService>();
+            services.AddTransient<IClass1CService, Class1CService>();
             services.AddTransient<ITeacherService, TeacherService>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             return services;

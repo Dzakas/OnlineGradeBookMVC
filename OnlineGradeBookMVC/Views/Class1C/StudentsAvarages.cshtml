@@ -1,0 +1,117 @@
+﻿@model OGB.Application.ViewModels.Class1C.VmForDisplay.ListAvarageGrades1CForListVm
+
+@{
+    ViewData["Title"] = "StudentsAvarages";
+}
+
+<h1>Students Avarages</h1>
+<p>
+
+    <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="Index">Back to previous page</a>
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="BiologyAvarages">Biology details</a>
+            </th>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="ChemistryAvarages">Chemistry details</a>
+            </th>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="EnglishAvarages">English details</a>
+            </th>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="GeographyAvarages">Geography details</a>
+            </th>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="GermanAvarages">German details</a>
+            </th>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="HistoryAvarages">History details</a>
+            </th>
+            <th>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Class1C" asp-action="MathAvarages">Math details</a>
+            </th>
+        </tr>
+    </thead>
+</table>
+
+<table class="table">
+    <style>
+        table {
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid;
+            padding: 10px;
+        }
+    </style>
+    <thead>
+        <tr>
+            <th>
+                Index number
+            </th>
+            <th>
+                BiologyAvarage
+            </th>
+            <th>
+                ChemistryAvarage
+            </th>
+            <th>
+                EnglishAvarage
+            </th>
+            <th>
+                GeographyAvarage
+            </th>
+            <th>
+                GermanAvarage
+            </th>
+            <th>
+                HistoryAvarage
+            </th>
+            <th>
+                MathAvarage
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.AvarageGrades1C)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BiologyAvarage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChemistryAvarage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EnglishAvarage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GeographyAvarage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GermanAvarage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HistoryAvarage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MathAvarage)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
