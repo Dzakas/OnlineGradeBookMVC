@@ -15,61 +15,61 @@ namespace OnlineGradeBookMVC.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var model = _class1CService.GetAllStudentsForList();
+            var model = _class1CService.GetAllStudentsForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult StudentsContactInformation()
         {
-            var model = _class1CService.GetAllStudentsContanctInfoForList();
+            var model = _class1CService.GetAllStudentsContanctInfoForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult StudentsAvarages()
         {
-            var model = _class1CService.GetAllAvarageGradesForList();
+            var model = _class1CService.GetAllAvarageGradesForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult BiologyAvarages()
         {
-            var model = _class1CService.GetAllBiologyForList();
+            var model = _class1CService.GetAllBiologyForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult ChemistryAvarages()
         {
-            var model = _class1CService.GetAllChemistryForList();
+            var model = _class1CService.GetAllChemistryForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult EnglishAvarages()
         {
-            var model = _class1CService.GetAllEnglishForList();
+            var model = _class1CService.GetAllEnglishForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult GeographyAvarages()
         {
-            var model = _class1CService.GetAllGeographyForList();
+            var model = _class1CService.GetAllGeographyForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult GermanAvarages()
         {
-            var model = _class1CService.GetAllGermanForList();
+            var model = _class1CService.GetAllGermanForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult HistoryAvarages()
         {
-            var model = _class1CService.GetAllHistoryForList();
+            var model = _class1CService.GetAllHistoryForList(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult MathAvarages()
         {
-            var model = _class1CService.GetAllMathForList();
+            var model = _class1CService.GetAllMathForList(10, 1);
             return View(model);
         }
 

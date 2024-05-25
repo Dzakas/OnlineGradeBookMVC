@@ -9,6 +9,8 @@ namespace OGB.Application.ViewModels.Class1C.VmForDisplay
     public class ListStudentForList1CVm
     {
         public List<StudentForList1CVm> Students1C { get; set; }
+        public int CurrentPage { get; set; }
+        public int PageSize { get; set; }
         public int Count { get; set; }
     }
 }

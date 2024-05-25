@@ -18,4 +18,8 @@
     <ProjectReference Include="..\OGB.Infrastructure\OGB.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewModels\Class2A\VmForEdit\" />
+  </ItemGroup>
+
 </Project>

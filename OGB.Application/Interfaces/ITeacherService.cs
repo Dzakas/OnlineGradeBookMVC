@@ -9,8 +9,8 @@ namespace OGB.Application.Interfaces
 {
     public interface ITeacherService
     {
-        ListTeacherForListVm GetAllTeachers();
-        ListTeacherAddressForListVm GetAllTeachersAddress();
-        ListTeacherContactInfoForListVm GetAllTeachersContactInfo();
+        ListTeacherForListVm GetAllTeachers(int pageSize, int pageNo);
+        ListTeacherAddressForListVm GetAllTeachersAddress(int pageSize, int pageNo);
+        ListTeacherContactInfoForListVm GetAllTeachersContactInfo(int pageSize, int pageNo);
     }
 }

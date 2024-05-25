@@ -10,16 +10,16 @@ namespace OGB.Application.Interfaces
 {
     public interface IClass1BService
     {
-        ListStudentForList1BVm GetAllStudentsForList();
-        ListAvarageGrades1BForListVm GetAllAvarageGradesForList();
-        ListStudentsContactInfo1BForListVm GetAllStudentsContanctInfoForList();
-        ListBiology1BForListVm GetAllBiologyForList();
-        ListChemistry1BForListVm GetAllChemistryForList();
-        ListEnglish1BForListVm GetAllEnglishForList();
-        ListGeography1BForListVm GetAllGeographyForList();
-        ListGerman1BForListVm GetAllGermanForList();
-        ListHistory1BForListVm GetAllHistoryForList();
-        ListMath1BForListVm GetAllMathForList();
+        ListStudentForList1BVm GetAllStudentsForList(int pageSize, int pageNo);
+        ListAvarageGrades1BForListVm GetAllAvarageGradesForList(int pageSize, int pageNo);
+        ListStudentsContactInfo1BForListVm GetAllStudentsContanctInfoForList(int pageSize, int pageNo);
+        ListBiology1BForListVm GetAllBiologyForList(int pageSize, int pageNo);
+        ListChemistry1BForListVm GetAllChemistryForList(int pageSize, int pageNo);
+        ListEnglish1BForListVm GetAllEnglishForList(int pageSize, int pageNo);
+        ListGeography1BForListVm GetAllGeographyForList(int pageSize, int pageNo);
+        ListGerman1BForListVm GetAllGermanForList(int pageSize, int pageNo);
+        ListHistory1BForListVm GetAllHistoryForList(int pageSize, int pageNo);
+        ListMath1BForListVm GetAllMathForList(int pageSize, int pageNo);
         EditBiology1BVm GetBiologyGradeForEdit(int id);
         void UpdateBiologyGrade(EditBiology1BVm model);
         EditChemistry1BVm GetChemistryGradeForEdit(int id);

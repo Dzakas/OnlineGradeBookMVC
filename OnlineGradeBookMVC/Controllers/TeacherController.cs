@@ -19,19 +19,19 @@ namespace OnlineGradeBookMVC.Controllers
         [HttpGet]
         public IActionResult TeachersList()
         {
-            var model = _teacherService.GetAllTeachers();
+            var model = _teacherService.GetAllTeachers(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult TeachersContactInformation()
         {
-            var model = _teacherService.GetAllTeachersContactInfo();
+            var model = _teacherService.GetAllTeachersContactInfo(10, 1);
             return View(model);
         }
         [HttpGet]
         public IActionResult TeachersAddresses()
         {
-            var model = _teacherService.GetAllTeachersAddress();
+            var model = _teacherService.GetAllTeachersAddress(10, 1);
             return View(model);
         }
     }

@@ -9,6 +9,8 @@ namespace OGB.Application.ViewModels.Class1A
     public class ListEnglish1AForListVm
     {
         public List<English1AForListVm> English1A { get; set; }
+        public int CurrentPage { get; set; }
+        public int PageSize { get; set; }
         public int Count { get; set; }
     }
 }

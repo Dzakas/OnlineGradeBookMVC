@@ -23,7 +23,7 @@ namespace OGB.Application.Services
             _teacherRepository = teacherRepository;
             _mapper = mapper;
         }
-        public ListTeacherForListVm GetAllTeachers()
+        public ListTeacherForListVm GetAllTeachers(int pageSize, int pageNo)
         {
             var teachers = _teacherRepository.GetAllTeachersInfo()
                 .ProjectTo<TeacherForListVm>(_mapper.ConfigurationProvider).ToList();
@@ -36,7 +36,7 @@ namespace OGB.Application.Services
             return teachersList;
         }
 
-        public ListTeacherAddressForListVm GetAllTeachersAddress()
+        public ListTeacherAddressForListVm GetAllTeachersAddress(int pageSize, int pageNo)
         {
             var teachersAddress = _teacherRepository.GetAllTeachersInfo()
                 .ProjectTo<TeacherAddressForListVm>(_mapper.ConfigurationProvider).ToList();
@@ -49,7 +49,7 @@ namespace OGB.Application.Services
             return teachersAddressList;
         }
 
-        public ListTeacherContactInfoForListVm GetAllTeachersContactInfo()
+        public ListTeacherContactInfoForListVm GetAllTeachersContactInfo(int pageSize, int pageNo)
         {
             var teachersContactInfo = _teacherRepository.GetAllTeachersInfo()
                  .ProjectTo<TeacherContactInfoForListVm>(_mapper.ConfigurationProvider).ToList();

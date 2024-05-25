@@ -19,6 +19,7 @@
         </tr>
     </thead>
 </table>
+<form asp-action="BiologyAvarages" asp-controller="Class1B" method="post">
 <table class="table">
     <style>
         table {
@@ -72,3 +73,35 @@
         }
     </tbody>
 </table>
+    <div class="row">
+        <table>
+            <tr>
+                @for (int i = 1; i < (Math.Ceiling(Model.Count / (double)Model.PageSize) + 1); i++)
+                {
+                    <td style="border: 0px; padding: 0px; width: 10px; height: 100px; font-size: 20px">
+                        @if (i != Model.CurrentPage)
+                        {
+                            <a href="javascript:PagerClick(@i)">@i</a>
+                        }
+                        else
+                        {
+                            <span>@i</span>
+                        }
+                    </td>
+                }
+            </tr>
+        </table>
+        <input type="hidden" name="pageNo" id="pageNo" />
+        <input type="hidden" name="pageSize" id="pageSize" value="10" />
+    </div>
+</form>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        function PagerClick(index) {
+            document.getElementById("pageNo").value = index;
+            document.forms[0].submit();
+        }
+    </script>
+}

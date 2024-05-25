@@ -24,124 +24,144 @@ namespace OGB.Application.Services
             _mapper = mapper;            
         }
 
-        public ListAvarageGrades1AForListVm GetAllAvarageGradesForList()
+        public ListAvarageGrades1AForListVm GetAllAvarageGradesForList(int pageSize, int pageNo)
         {
             var studentsAvarages = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<AvarageGrades1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var studentsAvaragesToShow = studentsAvarages.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var student1AList = new ListAvarageGrades1AForListVm()
             {
-                AvarageGrades1A = studentsAvarages,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                AvarageGrades1A = studentsAvaragesToShow,
                 Count = studentsAvarages.Count
             };
             return student1AList;
         }
 
-        public ListStudentsContactInfo1AForListVm GetAllStudentsContanctInfoForList()
+        public ListStudentsContactInfo1AForListVm GetAllStudentsContanctInfoForList(int pageSize, int pageNo)
         {
             var studentsContactInfo = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<StudentsContactInfo1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var studentsContactInfoToShow = studentsContactInfo.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var student1AContactInfoList = new ListStudentsContactInfo1AForListVm()
             {
-                StudentsContactInfo1A = studentsContactInfo,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                StudentsContactInfo1A = studentsContactInfoToShow,
                 Count = studentsContactInfo.Count
             };
             return student1AContactInfoList;
         }
 
-        public ListStudentForList1AVm GetAllStudentsForList()
+        public ListStudentForList1AVm GetAllStudentsForList(int pageSize, int pageNo)
         {
             var students = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<StudentForList1AVm>(_mapper.ConfigurationProvider).ToList();
-
+            var studentsToShow = students.Skip(pageSize*(pageNo-1)).Take(pageSize).ToList();
             var student1AList = new ListStudentForList1AVm()
             {
-                Students1A = students,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                Students1A = studentsToShow,
                 Count = students.Count
             };
             return student1AList;
         }
-        public ListBiology1AForListVm GetAllBiologyForList()
+        public ListBiology1AForListVm GetAllBiologyForList(int pageSize, int pageNo)
         {
             var biology = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<Biology1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var biologyToShow = biology.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var biology1AList = new ListBiology1AForListVm()
             {
-                Biology1A = biology,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                Biology1A = biologyToShow,
                 Count = biology.Count
             };
             return biology1AList;
         }
-        public ListChemistry1AForListVm GetAllChemistryForList()
+        public ListChemistry1AForListVm GetAllChemistryForList(int pageSize, int pageNo)
         {
             var chemistry = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<Chemistry1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var chemistryToShow = chemistry.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var chemistry1AList = new ListChemistry1AForListVm()
             {
-                Chemistry1A = chemistry,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                Chemistry1A = chemistryToShow,
                 Count = chemistry.Count
             };
             return chemistry1AList;
         }
-        public ListEnglish1AForListVm GetAllEnglishForList()
+        public ListEnglish1AForListVm GetAllEnglishForList(int pageSize, int pageNo)
         {
             var english = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<English1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var englishToShow = english.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var english1AList = new ListEnglish1AForListVm()
             {
-                English1A = english,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                English1A = englishToShow,
                 Count = english.Count
             };
             return english1AList;
         }
-        public ListGeography1AForListVm GetAllGeographyForList()
+        public ListGeography1AForListVm GetAllGeographyForList(int pageSize, int pageNo)
         {
             var geography = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<Geography1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var geographyToShow = geography.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var geography1AList = new ListGeography1AForListVm()
             {
-                Geography1A = geography,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                Geography1A = geographyToShow,
                 Count = geography.Count
             };
             return geography1AList;
         }
-        public ListGerman1AForListVm GetAllGermanForList()
+        public ListGerman1AForListVm GetAllGermanForList(int pageSize, int pageNo)
         {
             var german = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<German1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var germanToShow = german.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var german1AList = new ListGerman1AForListVm()
             {
-                German1A = german,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                German1A = germanToShow,
                 Count = german.Count
             };
             return german1AList;
         }
-        public ListHistory1AForListVm GetAllHistoryForList()
+        public ListHistory1AForListVm GetAllHistoryForList(int pageSize, int pageNo)
         {
             var history = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<History1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var historyToShow = history.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var history1AList = new ListHistory1AForListVm()
             {
-                History1A = history,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                History1A = historyToShow,
                 Count = history.Count
             };
             return history1AList;
         }
-        public ListMath1AForListVm GetAllMathForList()
+        public ListMath1AForListVm GetAllMathForList(int pageSize, int pageNo)
         {
             var math = _class1ARepository.GetAll1AStudentsInfo()
                 .ProjectTo<Math1AForListVm>(_mapper.ConfigurationProvider).ToList();
-
+            var mathToShow = math.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
             var math1AList = new ListMath1AForListVm()
             {
-                Math1A = math,
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                Math1A = mathToShow,
                 Count = math.Count
             };
             return math1AList;

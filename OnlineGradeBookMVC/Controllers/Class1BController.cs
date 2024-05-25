@@ -15,64 +15,163 @@ namespace OnlineGradeBookMVC.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var model = _class1BService.GetAllStudentsForList();
+            var model = _class1BService.GetAllStudentsForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Index(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllStudentsForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult StudentsContactInformation()
         {
-            var model = _class1BService.GetAllStudentsContanctInfoForList();
+            var model = _class1BService.GetAllStudentsContanctInfoForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult StudentsContactInformation(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllStudentsContanctInfoForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult StudentsAvarages()
         {
-            var model = _class1BService.GetAllAvarageGradesForList();
+            var model = _class1BService.GetAllAvarageGradesForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult StudentsAvarages(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllAvarageGradesForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult BiologyAvarages()
         {
-            var model = _class1BService.GetAllBiologyForList();
+            var model = _class1BService.GetAllBiologyForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult BiologyAvarages(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllBiologyForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult ChemistryAvarages()
         {
-            var model = _class1BService.GetAllChemistryForList();
+            var model = _class1BService.GetAllChemistryForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult ChemistryAvarages(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllChemistryForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult EnglishAvarages()
         {
-            var model = _class1BService.GetAllEnglishForList();
+            var model = _class1BService.GetAllEnglishForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult EnglishAvarages(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllEnglishForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult GeographyAvarages()
         {
-            var model = _class1BService.GetAllGeographyForList();
+            var model = _class1BService.GetAllGeographyForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult GeographyAvarages(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllGeographyForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult GermanAvarages()
         {
-            var model = _class1BService.GetAllGermanForList();
+            var model = _class1BService.GetAllGermanForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult GermanAvarages(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllGermanForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult HistoryAvarages()
         {
-            var model = _class1BService.GetAllHistoryForList();
+            var model = _class1BService.GetAllHistoryForList(10, 1);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult HistoryAvarages(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllHistoryForList(pageSize, pageNo.Value);
             return View(model);
         }
         [HttpGet]
         public IActionResult MathAvarages()
         {
-            var model = _class1BService.GetAllMathForList();
+            var model = _class1BService.GetAllMathForList(10, 1);
             return View(model);
         }
-
+        [HttpPost]
+        public IActionResult MathAvarages(int pageSize, int? pageNo)
+        {
+            if (!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            var model = _class1BService.GetAllMathForList(pageSize, pageNo.Value);
+            return View(model);
+        }
         [HttpGet]
         public IActionResult EditBiologyGrade(int id)
         {
